@@ -17,7 +17,7 @@ searchBtn.onclick = (e) => {
 
   if(!inputValue) return alert("Please enter a value")
 
-  fetch(`${window.location.href}/api/v1/search?q=${inputValue}`)
+  fetch(`${window.location.href}api/v1/search?q=${inputValue}`)
     .then(response => response.json())
     .then(data => {
       console.log(data)
