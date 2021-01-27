@@ -12,7 +12,7 @@ searchBtn.onclick = (e) => {
   const inputValue = document.getElementById("inputField").value
   const lists = document.getElementById("lists")
 
-
+  lists.innerHTML = 'fetching...'
 
 
   if(!inputValue) return alert("Please enter a value")
@@ -21,12 +21,14 @@ searchBtn.onclick = (e) => {
     .then(response => response.json())
     .then(data => {
       console.log(data)
-      lists.innerHTML = ''
+     
 
       if(!data.data.length){
         alert("Couldn't find word.")
         return
       }
+
+      lists.innerHTML = ''
 
       for (let index = 0; index < data.data.length; index++) {
         const element = data.data[index];
