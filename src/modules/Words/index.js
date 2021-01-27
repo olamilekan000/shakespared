@@ -1,7 +1,6 @@
 const fileReader = require('../../helpers/file-reader');
 const WordSearchRequestHandler = require('./words-request-handler');
 
-const fileReaderHelper = fileReader;
-const wordSearcher = new WordSearchRequestHandler({ fileReader: fileReaderHelper });
+const wordSearcher = new WordSearchRequestHandler({ fileReader });
 
 module.exports = wordSearcher;

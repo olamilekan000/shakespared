@@ -1,8 +1,3 @@
-// const handleSearch = (e) => {
-//   e.preventDefault()
-//   alert('clecked')
-// }
-
 const searchBtn = document.getElementById("searchBtn")
 
 searchBtn.onclick = (e) => {
