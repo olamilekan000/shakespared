@@ -24,6 +24,12 @@ Set Environment Variables
 PORT=9001
 ```
 
+Then you can start the application:
+
+```sh
+npm run dev
+```
+
 Run with Docker
 
 ```sh
@@ -32,10 +38,4 @@ Run with Docker
 
   # run
   docker run -e PORT=9001 -p 9001:9001 [image ID]
-```
-
-Then you can start the application:
-
-```sh
-npm run dev
 ```
